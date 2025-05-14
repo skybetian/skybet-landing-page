@@ -1,0 +1,9 @@
+{
+  "src/*.{js,ts,vue,json}": [
+    "biome format --write",
+    "biome lint --write"
+  ],
+  "src/*.{css,scss,md}": [
+    "biome format --write"
+  ]
+}
