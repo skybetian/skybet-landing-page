@@ -3,9 +3,15 @@
 }
 
 .custom-carousel {
-    height: 650px;
+    height: 700px;
 }
 
 .corporate-container {
     background-image: url('/assets/img/corporate.png');
+}
+
+.blurred-navbar {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(13.2px);
 }

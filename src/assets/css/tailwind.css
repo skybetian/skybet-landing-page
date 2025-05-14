@@ -63,6 +63,8 @@
 	--spacing-sm: 640px;
 	--spacing-xs: 420px;
 	--spacing-2xs: 320px;
+	/* text size */
+	--text-2xs: 0.75rem
 }
 
 @layer base {

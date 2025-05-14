@@ -3,9 +3,9 @@
         <Carousel :value="items" :page="activeCarousel" :numVisible="1" :numScroll="1" :showNavigators="false"
             :showIndicators="false">
             <template #item="slotProps">
-                <div class="w-full custom-carousel absolute flex justify-center pt-20">
+                <div class="w-full custom-carousel absolute flex justify-center pt-20 px-5 md:px-0">
                     <div class="w-full max-w-2xl h-full flex-col md:flex-row flex justify-center md:justify-between items-center">
-                        <span class="text-white text-5xl md:text-6xl xl:text-7xl leading-16 md:leading-18 xl:leading-20 pl-14 font-bold custom-text-shadow"
+                        <span class="text-white text-5xl md:text-6xl xl:text-7xl leading-16 md:leading-18 xl:leading-20 md:pl-14 font-bold custom-text-shadow text-center md:text-start"
                             v-html="slotProps.data.description"></span>
                         <img :src="slotProps.data.img" :alt="slotProps.data.img" class="w-4/12 lg:w-5/12 md:-mt-20">
                     </div>
@@ -13,12 +13,12 @@
                 <img :src="slotProps.data.background" :alt="slotProps.data.background" class="w-full custom-carousel" />
             </template>
         </Carousel>
-        <button @click="() => {
+    </div>
+    <!-- <button @click="() => {
             activeCarousel++
         }">
             button
-        </button>
-    </div>
+        </button> -->
 </template>
 <script>
 import { ref } from 'vue';

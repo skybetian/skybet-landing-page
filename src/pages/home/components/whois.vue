@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full flex items-center justify-center">
-        <div class="w-full max-w-2xl py-12 flex items-start justify-center gap-28">
-            <div class="w-8/12">
-                <h3 class="text-gray-100 text-4xl font-bold">WHO IS <span
-                        class="text-primary-300 text-5xl">SKYBET?</span>
+    <div class="w-full flex items-center justify-center px-5 md:px-14 2xl:px-18 3xl:px-0">
+        <div class="w-full max-w-2xl py-10 md:py-20 xl:py-12 flex flex-col-reverse xl:flex-row xl:items-center justify-center gap-8 sm:gap-10 md:gap-14 xl:gap-28">
+            <div class="w-full xl:w-8/12">
+                <h3 class="text-gray-100 text-xl md:text-3xl lg:text-4xl font-bold flex flex-col items-center justify-center md:block">WHO IS <span
+                        class="text-primary-300 text-3xl md:text-4xl lg:text-5xl">SKYBET?</span>
                 </h3>
-                <div class="mt-5 text-md text-black-100 flex flex-col gap-8">
+                <div class="mt-5 text-sm lg:text-lg text-black-100 flex flex-col gap-5 lg:gap-8">
                     <p>
                         <span class="text-primary-100 font-bold">Skybet Gaming Corporation (Skybet)</span>
                         is a premier gaming company duly registered with the Securities and Exchange Commission (SEC) in
@@ -48,8 +48,8 @@
                     </p>
                 </div>
             </div>
-            <div class="w-3/12">
-                <img src="/assets/img/whoisskybet.png" alt="who is skybet" class="w-full">
+            <div class="w-full xl:w-4/12 h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] xl:h-full">
+                <img src="/assets/img/whoisskybet.png" alt="who is skybet" class="w-full h-full object-cover rounded-2xl">
             </div>
         </div>
     </div>
