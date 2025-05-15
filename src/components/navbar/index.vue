@@ -1,6 +1,6 @@
 <template>
-    <div class="absolute top w-full flex justify-center blurred-navbar text-white px-5 md:px-14 2xl:px-18 3xl:px-0">
-        <div class="w-full max-w-2xl py-2 flex flex-row justify-between items-center">
+    <header class="absolute top w-full flex justify-center blurred-navbar text-white px-5 md:px-14 2xl:px-0">
+        <nav class="w-full max-w-2xl xl:max-w-xl py-2 flex flex-row justify-between items-center">
             <div class="logo w-32 xl:w-40">
                 <RouterLink to="/">
                     <img src="/assets/img/logo.png" alt="">
@@ -23,6 +23,6 @@
             <div class="md:hidden">
                 <img src="/assets/img/icons/menu.png" alt="menu bar" class="cursor-pointer">
             </div> 
-        </div>
-    </div>
+        </nav>
+    </header>
 </template>

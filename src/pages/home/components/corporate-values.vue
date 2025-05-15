@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full flex items-center justify-center corporate-container px-5 md:px-14 2xl:px-18 3xl:px-0">
-        <div class="w-full max-w-2xl py-10 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-8">
+    <div class="w-full flex items-center justify-center corporate-container px-5 md:px-14 2xl:px-0">
+        <div class="w-full max-w-2xl xl:max-w-xl py-10 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-8">
             <div>
                 <h3 class="text-white text-xl md:text-3xl lg:text-4xl font-bold custom-text-shadow text-center lg:text-start">THESE IS OUR
                 </h3>

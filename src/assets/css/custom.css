@@ -6,12 +6,21 @@
     height: 500px;
 }
 
+@media (max-width: 1250px) {
+    .custom-header-bg {
+        height: 320px;
+    }
+}
+
 .custom-carousel {
     height: 700px;
 }
 
 .corporate-container {
     background-image: url('/assets/img/corporate.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .blurred-navbar {
@@ -46,4 +55,23 @@
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(16.2px);
+}
+
+.job-custom {
+    background: linear-gradient(180deg, #9AAAB8 0%, #E5EEFE 100%);
+}
+
+.job-custom:hover {
+    background: linear-gradient(180deg, #C70101 0%, #C60101 100%);
+}
+
+.view-job-arrow {
+    background: linear-gradient(180deg, #A20A0A 25%, #C70101 100%);
+}
+
+.get-in-touch-container {
+    background-image: url('/assets/img/fiber.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }

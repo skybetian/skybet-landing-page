@@ -8,7 +8,9 @@
 	--color-primary-200: #C60101;
 	--color-primary-300: #CB0B0B;
 	--color-gray-100: #565656;
+	--color-gray-200: #A8A8A8;
 	--color-black-100: #252525;
+	--color-light-blue-100: #F2F9FF;
 
 	/* breakpoints */
 	--breakpoint-6xl: 2900px;

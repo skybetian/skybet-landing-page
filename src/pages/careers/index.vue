@@ -1,23 +1,27 @@
 <template>
   <div>
-    <NavbarLayout class="z-10 2xl:px-0"/>
-    <Carousel />
-    <!-- <WhoIs />
-    <CorporateValues />
-    <MissionVision />
-    <FooterLayout/> -->
+    <NavbarLayout class="z-10 2xl:px-0" />
+    <HeaderLayout />
+    <Positions />
+    <GetInTouch />
   </div>
 </template>
 
 <script>
 import NavbarLayout from '@components/navbar/index.vue';
-import Carousel from './components/carousel.vue';
+import HeaderLayout from './components/header.vue';
+import Positions from './components/positions.vue';
+import FooterLayout from '@components/footer/index.vue';
+import GetInTouch from './components/get-in-touch.vue';
 
 export default {
   name: 'Careers',
   components: {
     NavbarLayout,
-    Carousel,
+    HeaderLayout,
+    Positions,
+    FooterLayout,
+    GetInTouch
   },
 }
 </script>

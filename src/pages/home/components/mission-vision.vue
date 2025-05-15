@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full flex flex-col items-center justify-center pt-14 pb-24 lg:pb-32 px-5 md:px-14 2xl:px-18 3xl:px-0">
-        <div class="w-full max-w-2xl flex flex-col items-center justify-center">
+    <div class="w-full flex flex-col items-center justify-center pt-14 pb-24 lg:pb-32 px-5 md:px-14 2xl::px-0">
+        <div class="w-full max-w-2xl xl:max-w-xl flex flex-col items-center justify-center">
             <h3 class="text-gray-100 text-xl md:text-3xl lg:text-4xl font-bold">YOU'LL BE AMAZED ABOUT</h3>
             <h3 class="text-primary-300 text-3xl md:text-4xl lg:text-5xl font-bold">OUR MISSION AND VISION</h3>
         </div>
-        <div class="w-full max-w-2xl flex flex-col sm:flex-row gap-5 mt-12">
-            <div class="mission-bg lg:pt-64 xl:pt-0 flex items-end xl:block xl:min-h-full w-full lg:w-6/12 rounded-tl-4xl rounded-br-4xl">
+        <div class="w-full max-w-2xl xl:max-w-xl flex flex-col sm:flex-row gap-5 mt-12">
+            <div class="mission-bg lg:pt-32 xl:pt-0 flex items-end xl:block xl:min-h-full w-full lg:w-6/12 rounded-tl-4xl rounded-br-4xl">
                 <div class="w-full xl:w-8/12 2xl:w-7/12 h-full min-h-[25rem] lg:min-h-[25rem] xl:h-full relative">
                     <div class="relative z-10 h-full w-full p-10 sm:p-7 xl:p-10 text-white">
                         <h3 class="text-xl md:text-3xl lg:text-4xl font-bold">MISSION</h3>
@@ -33,11 +33,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full h-full blur absolute top-0 left-0 rounded-br-4xl xl:rounded-br-none rounded-tl-4xl z-0">
+                    <div class="w-full h-full blur absolute top-0 left-0 rounded-br-4xl xl:rounded-br-none rounded-tl-4xl lg:rounded-tl-none xl:rounded-tl-4xl z-0">
                     </div>
                 </div>
             </div>
-            <div class="vision-bg lg:pt-64 xl:pt-0 flex items-end xl:block xl:min-h-full w-full lg:w-6/12 rounded-tl-4xl rounded-br-4xl">
+            <div class="vision-bg lg:pt-32 xl:pt-0 flex items-end xl:block xl:min-h-full w-full lg:w-6/12 rounded-tl-4xl rounded-br-4xl">
                 <div class="w-full xl:w-8/12 2xl:w-7/12 h-full lg:min-h-[25rem] xl:h-full relative">
                     <div class="relative z-10 h-full w-full p-10 sm:p-7 xl:p-10 text-white">
                         <h3 class="text-xl md:text-3xl lg:text-4xl font-bold">VISION</h3>
@@ -50,7 +50,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full h-full blur absolute top-0 left-0 rounded-br-4xl xl:rounded-br-none rounded-tl-4xl z-0">
+                    <div class="w-full h-full blur absolute top-0 left-0 rounded-br-4xl xl:rounded-br-none rounded-tl-4xl lg:rounded-tl-none xl:rounded-tl-4xl z-0">
                     </div>
                 </div>
             </div>
