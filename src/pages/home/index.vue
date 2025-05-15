@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import { ref } from 'vue';
 import NavbarLayout from '@components/navbar/index.vue';
 import Carousel from './components/carousel.vue';
 import WhoIs from './components/whois.vue';
@@ -27,9 +26,6 @@ export default {
     CorporateValues,
     MissionVision,
     FooterLayout
-  },
-  setup() {
-
   },
 }
 </script>

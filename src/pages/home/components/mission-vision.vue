@@ -54,9 +54,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <img src="/assets/img/mission.png" alt="mission" class="w-full lg:w-6/12"> -->
-            <!-- <img src="/assets/img/vision.png" alt="vision" class="w-full lg:w-6/12"> -->
         </div>
     </div>
 </template>
