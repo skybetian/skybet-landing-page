@@ -8,7 +8,7 @@
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-2 md:gap-5 lg:gap-6 xl:px-5">
                 <div v-for="(card, key) in cards" :key="key" class="rounded-2xl flex flex-col justify-center items-center p-5 xl:p-8 min-h-96 sm:min-h-56 md:min-h-96" :class="card.background_color">
-                    <img :src="'/assets/img/corporate/'+card.icon" alt="icon" class="w-32 sm:w-32 md:w-28 xl:w-28 2xl:w-32">
+                    <img :src="'./assets/img/corporate/'+card.icon" alt="icon" class="w-32 sm:w-32 md:w-28 xl:w-28 2xl:w-32">
                     <h3 class="mt-5 text-2xl sm:text-sm md:text-xl lg:text-lg 2xl:text-2xl text-center font-bold" :class="card.text_color">{{ card.title }}</h3>
                     <p class="mt-2 text-sm sm:text-2xs md:text-xs lg:text-sm" :class="card.text_color">{{ card.description }}</p>
                 </div>
@@ -17,7 +17,6 @@
     </div>
 </template>
 <script>
-import { ref } from 'vue';
 import Carousel from 'primevue/carousel';
 
 export default {

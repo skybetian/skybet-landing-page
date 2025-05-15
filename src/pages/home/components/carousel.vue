@@ -31,27 +31,27 @@ export default {
     setup() {
         const items = [
             {
-                background: '/assets/img/carousel/carousel-bg-1.png',
+                background: './assets/img/carousel/carousel-bg-1.png',
                 description: "WE <span class='text-primary-200'>HELP</span> YOU <br/> TURN YOUR <span class='text-primary-200'>IDEAS</span> <br/> INTO <span class='text-primary-200'>REALITY</span>",
                 img: '/assets/img/carousel/carousel-img-1.png',
             },
             {
-                background: '/assets/img/carousel/carousel-bg-2.png',
+                background: './assets/img/carousel/carousel-bg-2.png',
                 description: "WE <span class='text-primary-200'>HELP</span> YOU <br/> TURN YOUR <span class='text-primary-200'>IDEAS</span> <br/> INTO <span class='text-primary-200'>REALITY</span>",
                 img: '/assets/img/carousel/carousel-img-2.png',
             },
             {
-                background: '/assets/img/carousel/carousel-bg-3.png',
+                background: './assets/img/carousel/carousel-bg-3.png',
                 description: "WE <span class='text-primary-200'>HELP</span> YOU <br/> TURN YOUR <span class='text-primary-200'>IDEAS</span> <br/> INTO <span class='text-primary-200'>REALITY</span>",
                 img: '/assets/img/carousel/carousel-img-3.png',
             },
             {
-                background: '/assets/img/carousel/carousel-bg-4.png',
+                background: './assets/img/carousel/carousel-bg-4.png',
                 description: "WE <span class='text-primary-200'>HELP</span> YOU <br/> TURN YOUR <span class='text-primary-200'>IDEAS</span> <br/> INTO <span class='text-primary-200'>REALITY</span>",
                 img: '/assets/img/carousel/carousel-img-4.png',
             },
             {
-                background: '/assets/img/carousel/carousel-bg-5.png',
+                background: './assets/img/carousel/carousel-bg-5.png',
                 description: "WE <span class='text-primary-200'>HELP</span> YOU <br/> TURN YOUR <span class='text-primary-200'>IDEAS</span> <br/> INTO <span class='text-primary-200'>REALITY</span>",
                 img: '/assets/img/carousel/carousel-img-5.png',
             },

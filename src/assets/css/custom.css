@@ -15,3 +15,31 @@
     border: 1px solid rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(13.2px);
 }
+
+.mission-bg {
+    background-image: url('/assets/img/mission-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mission-bg .blur {
+    background: rgba(0, 0, 0, 0.39);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(16.2px);
+    box-sizing: border-box;
+}
+
+.vision-bg {
+    background-image: url('/assets/img/vision-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vision-bg .blur {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(16.2px);
+}
