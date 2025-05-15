@@ -1,11 +1,11 @@
 {
-  "name": "skybet",
+  "name": "try-again",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "format": "biome format",
     "lint": "biome lint",
@@ -17,7 +17,6 @@
     "@tailwindcss/vite": "^4.1.6",
     "biome": "^0.3.3",
     "husky": "^9.1.7",
-    "lightningcss": "^1.30.0",
     "lint-staged": "^16.0.0",
     "path": "^0.12.7",
     "primevue": "^4.3.4",
@@ -26,11 +25,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@types/node": "^22.15.17",
     "@vitejs/plugin-vue": "^5.2.3",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.8.3",
-    "vite": "^6.3.5",
-    "vue-tsc": "^2.2.8"
+    "vite": "^6.3.5"
   }
 }
