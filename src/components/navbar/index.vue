@@ -3,7 +3,7 @@
         <nav class="w-full max-w-2xl xl:max-w-xl py-2 flex flex-row justify-between items-center">
             <div class="logo w-32 xl:w-40">
                 <RouterLink to="/">
-                    <img src="/assets/img/logo.png" alt="">
+                    <img src="/assets/img/logo.png" alt="logo">
                 </RouterLink>
             </div>
             <div class="hidden md:flex flex-row gap-8">

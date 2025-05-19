@@ -7,6 +7,7 @@
 	--color-primary-100: #C70101;
 	--color-primary-200: #C60101;
 	--color-primary-300: #CB0B0B;
+	--color-primary-400: #A20A0A;
 	--color-gray-100: #565656;
 	--color-gray-200: #A8A8A8;
 	--color-black-100: #252525;
@@ -43,5 +44,17 @@
 @layer base {
 	.navbar-menu {
 		@apply hover:text-primary-100 border-b-2 border-transparent hover:border-primary-100 transition-colors ease-in-out duration-300
+	}
+
+	.job-description-custom > p{
+		@apply mb-5;
+	}
+
+	.job-description-custom ul {
+		@apply pl-5 pb-5;
+	}
+
+	.job-description-custom ul li {
+		@apply list-disc;
 	}
 }
