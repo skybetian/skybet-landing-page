@@ -1,3 +1,19 @@
+<script setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router'
+import { JOB_LIST } from '@constants/jobs.js';
+
+const router = useRouter()
+
+const onRedirect = (id) => {
+    router.push({
+        name: 'careers-details',
+        params: {
+            id: id
+        },
+    })
+}
+</script>
 <template>
     <div class="w-full px-5 md:px-14 2xl:px-0 flex justify-center">
         <div class="w-full max-w-2xl xl:max-w-xl pt-10 pb-18">
@@ -21,14 +37,12 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5 xl:gap-7 pt-3 md:pt-10">
-                <div v-for="(job, key) in jobs" :key="key" @click="job.onClick"
+                <div v-for="(job, key) in JOB_LIST" :key="key" @click="onRedirect(job.id)"
                     class="rounded-xl job-custom text-white p-5 pb-5 md:pb-7 xl:pb-10 space-y-3 lg:space-y-4 transition-transform ease-out duration-500 cursor-pointer hover:scale-105">
-                    <h3 class="text-sm md:text-xl lg:text-lg 2xl:text-2xl font-bold uppercase">
-                        {{ job.job_title }}
+                    <h3 class="text-sm md:text-xl lg:text-lg 2xl:text-2xl font-bold uppercase line-clamp-1">
+                        {{ `${job.urgent ? 'URGENT:' : ''}`  }} {{ job.title }} ({{ job.workplace }})
                     </h3>
-                    <p class="text-2xs md:text-xs lg:text-sm">
-                        {{ job.description }}
-                    </p>
+                    <span v-html="job.description" class="text-2xs md:text-xs lg:text-sm line-clamp-3"></span>
                     <div @click="job.onClick"
                         class="flex flex-row items-center p-1 rounded-full bg-white w-fit border border-solid border-primary-300 cursor-pointer hover:scale-105 transition-transform ease-in-out duration-300">
                         <div class="view-job-arrow w-7 h-7 rounded-full flex items-center justify-center">
@@ -46,164 +60,3 @@
         </div>
     </div>
 </template>
-<script>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router'
-
-export default {
-    setup: () => {
-        const router = useRouter()
-
-        const jobs = ref([
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            },
-            {
-                job_title: "Job Position 1",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                onClick: () => {
-                    router.push({
-                        name: 'careers-details',
-                        params: {
-                            id: 1
-                        },
-                    })
-                },
-            }
-        ])
-
-        return {
-            jobs
-        }
-    }
-}
-</script>

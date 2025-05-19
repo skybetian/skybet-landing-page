@@ -1,3 +1,6 @@
+<script setup>
+import FooterLayout from '@components/footer/index.vue';
+</script>
 <template>
     <div class="w-full get-in-touch-container px-5 md:px-14 2xl:px-18 3xl:px-0">
       <div class="flex flex-col justify-center items-center pt-24 pb-40 2xl:pb-52 text-white">
@@ -20,12 +23,3 @@
     </div>
     <FooterLayout class="relative z-10 -mt-16" />
 </template>
-<script>
-import FooterLayout from '@components/footer/index.vue';
-
-export default {
-    components: {
-        FooterLayout
-    },
-}
-</script>
