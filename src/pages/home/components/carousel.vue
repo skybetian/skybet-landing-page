@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import Carousel from 'primevue/carousel';
 
 const items = [
@@ -30,12 +30,30 @@ const items = [
     },
 ];
 
-const activeCarousel = ref(0)
+const carouselRef = ref(null);
+const page = ref(0);
+const numVisible = 1;
+
+const totalPages = computed(() =>
+  Math.ceil(items.length / numVisible)
+);
+
+const onNext = () => {
+    console.log(page.value);
+    page.value = (page.value + 1) % totalPages.value;
+}
+
+
+const onPrev = () => {    
+    console.log(page.value);
+    page.value = (page.value - 1 + totalPages.value) % totalPages.value;
+}
+
 </script>
 <template>
-    <div class="overflow-hidden">
-        <Carousel :value="items" :page="activeCarousel" :numVisible="1" :numScroll="1" :showNavigators="false"
-            :showIndicators="false">
+    <div class="overflow-hidden relative">
+        <Carousel ref="carouselRef" :value="items" :page="page" :numVisible="numVisible" :numScroll="1" :showNavigators="false"
+            :showIndicators="false" circular>
             <template #item="slotProps">
                 <div class="w-full custom-carousel absolute flex justify-center pt-20 px-5 md:px-0">
                     <div
@@ -50,5 +68,22 @@ const activeCarousel = ref(0)
                 <img :src="slotProps.data.background" :alt="slotProps.data.background" class="w-full custom-carousel" />
             </template>
         </Carousel>
+        <div class="w-full absolute top-1/2 left-0 z-20 px-5 md:px-0 flex justify-center items-center">
+            <div class="w-full max-w-2xl xl:max-w-xl h-full flex flex-row justify-between">
+                <div @click="onPrev" class="h-fit cursor-pointer hover:scale-105 transition-transform ease-in-out duration-300">
+                    <svg class="w-5 md:w-8 xl:w-10" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-0.5" y="0.5" width="39" height="39" rx="9.5" transform="matrix(-1 0 0 1 39 0)"
+                            stroke="white" />
+                        <path d="M29 8L16.202 19.8235L29 31.6471L10.2794 19.8235L29 8Z" fill="white" />
+                    </svg>
+                </div>
+                <div @click="onNext" class="h-fit cursor-pointer hover:scale-105 transition-transform ease-in-out duration-300">
+                    <svg class="w-5 md:w-8 xl:w-10" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="9.5" stroke="white" />
+                        <path d="M11 8L23.798 19.8235L11 31.6471L29.7206 19.8235L11 8Z" fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
