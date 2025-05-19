@@ -5,7 +5,9 @@ import { ref, watch } from "vue";
 const visibleModal = ref(false)
 
 const props = defineProps({
-    visible: Boolean
+    visible: Boolean,
+    header: String,
+    description: String,
 })
 
 const emit = defineEmits(['update:visible'])
@@ -37,10 +39,10 @@ watch(() => props.visible, (val) => {
                             <img src="/assets/img/logo.png" alt="logo">
                             <h3
                                 class="text-gray-100 text-sm md:text-xl lg:text-lg 2xl:text-2xl md:text-center font-bold pt-5">
-                                Your application has been submitted successfully!
+                                {{ props.header }}
                             </h3>
                             <p class="text-gray-100 text-sm md:text-base lg:text-lg 2xl:text-xl text-center pt-3">
-                                We will get back to you as soon as possible. <br>
+                                {{ props.description }}
                             </p>
                             <button @click="onClose"
                                 class="uppercase px-10 py-3 bg-primary-300 rounded-full text-white cursor-pointer hover:scale-105 transition-transform ease-in-out duration-300 mt-5">

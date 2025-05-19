@@ -22,7 +22,7 @@
                     <RouterLink to="/careers" class="navbar-menu w-fit">
                         <p class="text-sm">CAREERS</p>
                     </RouterLink>
-                    <RouterLink to="/" class="navbar-menu w-fit">
+                    <RouterLink to="/contact-us" class="navbar-menu w-fit">
                         <p class="text-sm">CONTACT US</p>
                     </RouterLink>
                 </div>
