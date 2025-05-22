@@ -17,7 +17,7 @@
                         <p class="text-sm">HOME</p>
                     </RouterLink>
                     <RouterLink to="/" class="navbar-menu w-fit">
-                        <p class="text-sm">BSPORTS</p>
+                        <p class="text-sm">BLUCKY</p>
                     </RouterLink>
                     <RouterLink to="/careers" class="navbar-menu w-fit">
                         <p class="text-sm">CAREERS</p>
