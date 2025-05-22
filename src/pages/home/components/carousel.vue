@@ -69,7 +69,7 @@ const onPrev = () => {
             </template>
         </Carousel>
         <div class="w-full absolute top-1/2 left-0 z-20 px-5 md:px-14 2xl:px-0 flex justify-center items-center">
-            <div class="w-full max-w-2xl xl:max-w-xl h-full flex flex-row justify-between">
+            <div class="w-full max-w-2xl h-full flex flex-row justify-between">
                 <div @click="onPrev" class="h-fit cursor-pointer hover:scale-105 transition-transform ease-in-out duration-300">
                     <svg class="w-5 md:w-8 xl:w-10" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="-0.5" y="0.5" width="39" height="39" rx="9.5" transform="matrix(-1 0 0 1 39 0)"
